@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home | Beranda</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      body {
+        position: relative;
+        background: url("img/home\ 2.jpg") fixed no-repeat center center / cover;
+        /* Ganti dengan path file gambar Anda dan sesuaikan propertinya */
+        background-size: cover; /*memastikan gambar menutupi seluruh area laman */
+        /* background-repeat: no-repeat; menghindari pengulangan gambar */
+        height: 100vh; /* Set tinggi sesuai kebutuhan */
+        margin: 0; /* Hilangkan margin default dari body */
+        padding: 0;
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        color: white; /* Atur warna teks sesuai kebutuhan */
+        font-family: "Arial", sans-serif; /* Atur jenis font sesuai kebutuhan */
+      }
+
+      /* Overlay hitam semi-transparan */
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Sesuaikan tingkat transparansi di sini (0-1) */
+      }
+
+      .content {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      .gambar {
+        text-align: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .transparent-image {
+        width: 20%; /* Lebar gambar mengambil seluruh lebar viewport */
+        max-width: 80px; /* Atur lebar maksimum gambar */
+        opacity: 0.7; /* Atur tingkat transparansi (0-1), 0 = transparan, 1 = tidak transparan */
+        margin: 55px; /* Atur margin sesuai kebutuhan */
+      }
+
+      .tulisan {
+        display: flex;
+        justify-content: baseline;
+        width: 50%; /* Sesuaikan lebar sesuai kebutuhan */
+        margin-left: 28%; /* Bergeser ke kanan */
+
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: rgb(197, 151, 42);
+        text-align: center;
+
+        top: 80%;
+      }
+
+      h2 {
+        margin: auto; /* Hilangkan margin default pada heading */
+      }
+
+      .deskripsi {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        margin-left: 3%;
+        margin-right: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-transparent"
+      style="font-family: 'Times New Roman', Times, serif"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo cafe'o.png" alt="" width="80" height="70"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="About.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="menu.html"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="galeri.html"
+                >Galeri</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!---Akhir Navbar-->
+
+    <!--Content-->
+    <div class="content">
+      <h1 style="margin: 3%">Welcome To</h1>
+      <h3>Cafe' O</h3>
+    </div>
+    <!--Akhir Content-->
+
+    <!---gambar pelayanan-->
+    <div class="gambar">
+      <img
+        class="transparent-image"
+        src="img/Premium Vector _ Spoon fork and plate vector icon symbol illustration restaurant logo design.png"
+        alt="Transparent Image"
+      />
+
+      <img
+        class="transparent-image"
+        src="img/Continuous one line drawing of a cup of coffee minimalist design minimalism style_.png"
+        alt="Transparent Image"
+        style="width: 10%"
+      />
+
+      <img
+        class="transparent-image"
+        src="img/Ilustrasi Vektor Gelas Sekali Pakai Dengan Ilustrasi Vektor Takeaway Drink Gaya Tangan, Clipart Makanan, Minum, Bawa Pulang PNG dan Vektor dengan Background Transparan untuk Unduh Gratis.png"
+        alt="Transparent Image"
+        style="width: 10%"
+      />
+    </div>
+
+    <div class="tulisan">
+      <h2>Food</h2>
+      <h2>Hot Drinks</h2>
+      <h2>Cold Drinks</h2>
+    </div>
+    <!--Akhir pelayanan-->
+
+    <hr />
+    <!----Deskripsi-->
+    <div class="deskripsi">
+      <h2>Sejarah</h2>
+    </div>
+    <hr />
+    <p>
+      Café ‘O yang terletak di Kota Baru ini di dirikan oleh Ibu Angelina Ling
+      Ling pada Tahun 2018,dan resmi di buka pada 24 Februari 2019. Gedung Café
+      ‘O memiliki 5 lantai dimana lantai 1 dan 2 ruangan bebas asap rokok,
+      lantai 3 ruangan ber AC / ruangan VIP, lantai 4 gudang dan lantai 5
+      Manager, ruangan VIP. Café ‘O biasanya buka untuk acara rapat, ulang tahun
+      dan acara lainnya dengan kapasitas kurang lebih 100 orang, untuk jam
+      operasi Café ‘O Kota Baru dimulai 08.00 pagi sampai 02.00 WIB. Dengan
+      sistem kerja dibagi 2 shift, jumlah karyawan Café ‘O berjumlah 10 orang di
+      mana 5 orang di shift pagi dan 5 orang di shift malam.
+    </p>
+
+    <hr />
+    <!-----Visi dan Misi-->
+    <section id="">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col" style="font-style: italic">
+            <h2 style="font-style: italic">VISI DAN MISI</h2>
+            <h3 style="font-style: italic">Cafe 'O</h3>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col">
+            <h3>VISI</h3>
+          </div>
+          <div class="col">
+            <h3>MISI</h3>
+          </div>
+        </div>
+
+        <div class="row justify-content-center fs-5text-left">
+          <div class="col" style="text-align: justify">
+            Menjadi tempat terbuka dan ramah lingkungan yang memberikan
+            kenyamanan bagi semua kalangan masyarakat umum.
+          </div>
+          <div class="col" style="text-align: justify">
+            Menyediakan tempat dengan memberikan layanan terbaik untuk semua
+            pelanggan
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <h3 style="text-align: center">Target Pelanggan</h3>
+    <p style="text-align: center">
+      Target pelanggan di Café ‘O untuk masyarakat umum.
+    </p>
+    <hr />
+    <!-----Penutup------->
+    <!---Akhir Skripsi-->
+
+    <!---bagian akhir-->
+    <section id="">
+      <div class="container">
+        <div class="row text-left">
+          <div class="col">
+            <hr />
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col" style="text-align: left">
+            <form>
+              <div class="text-left">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                />
+              </div>
+              <div class="text-left">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                />
+              </div>
+              <div class="text-left">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button style="float: left" class="btn btn-primary">
+                <a href="https://www.gmail.com" style="color: white">Kirim</a>
+              </button>
+            </form>
+          </div>
+
+          <div class="col text-left" style="font-style: italic">
+            <p>Alamat :Jl.Prof.M.Yamin, Sungai Bakong,Kota Pontianak</p>
+            <p>Telpon :081357694379</p>
+            <p>
+              Jam Operasional untuk jam kerja pelayanan : Buka 8.00 AM-02.00 PM
+            </p>
+            <p>Kode Pos : 78391</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---akhir-->
+
+    <div class="footer">
+      <footer
+        class="bg-dark text-white text-center"
+        style="
+          background: linear-gradient(rgb(79, 190, 190), rgb(105, 219, 209));
+        "
+      >
+        <p style="text-align: center">
+          @ by Cafe,O
+          <a
+            href="https://www.instagram.com/cafeokotabaru"
+            class="text-danger font-weight-bold"
+            >Cafe'O Official</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
